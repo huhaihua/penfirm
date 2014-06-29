@@ -1,0 +1,14 @@
+.\object\blockq.o: ..\Common\Minimal\BlockQ.c
+.\object\blockq.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\object\blockq.o: ..\..\Source\include\FreeRTOS.h
+.\object\blockq.o: C:\Keil\ARM\ARMCC\bin\..\include\stddef.h
+.\object\blockq.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\object\blockq.o: ..\..\Source\include\projdefs.h
+.\object\blockq.o: ..\CORTEX_STM32F103_Keil\FreeRTOSConfig.h
+.\object\blockq.o: ..\..\Source\include\portable.h
+.\object\blockq.o: ..\..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h
+.\object\blockq.o: ..\..\Source\include\mpu_wrappers.h
+.\object\blockq.o: ..\..\Source\include\task.h
+.\object\blockq.o: ..\..\Source\include\list.h
+.\object\blockq.o: ..\..\Source\include\queue.h
+.\object\blockq.o: ..\Common\include\BlockQ.h

@@ -1,0 +1,5 @@
+--cpu Cortex-M3 ".\object\stm32f10x.o" ".\object\cortexm3_macro_rvds.o" ".\object\stm32f10x_usart.o" ".\object\stm32f10x_gpio.o" ".\object\stm32f10x_lib.o" ".\object\stm32f10x_nvic.o" ".\object\stm32f10x_rcc.o" ".\object\stm32f10x_spi.o" ".\object\stm32f10x_systick.o" ".\object\stm32f10x_tim.o" ".\object\partest.o" ".\object\serial.o" ".\object\timertest.o" ".\object\main.o" ".\object\spi_flash.o" ".\object\semtest.o" ".\object\blockq.o" ".\object\blocktim.o" ".\object\comtest.o" ".\object\death.o" ".\object\flash.o" ".\object\integer.o" ".\object\pollq.o" ".\object\adc.o" ".\object\drv8830.o" ".\object\encode.o" ".\object\pwm.o" ".\object\tasks.o" ".\object\list.o" ".\object\queue.o" ".\object\port.o" ".\object\heap_2.o" 
+--library_type=microlib --strict --scatter ".\object\RTOSDemo.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\RTOSDemo.map" -o .\object\RTOSDemo.axf

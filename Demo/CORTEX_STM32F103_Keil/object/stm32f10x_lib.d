@@ -1,0 +1,16 @@
+.\object\stm32f10x_lib.o: STM32F10xFWLib\src\stm32f10x_lib.c
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\stm32f10x_lib.h
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\stm32f10x_map.h
+.\object\stm32f10x_lib.o: ..\CORTEX_STM32F103_Keil\stm32f10x_conf.h
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\stm32f10x_type.h
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\cortexm3_macro.h
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\stm32f10x_adc.h
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\stm32f10x_exti.h
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\stm32f10x_gpio.h
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\stm32f10x_nvic.h
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\stm32f10x_rcc.h
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\stm32f10x_spi.h
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\stm32f10x_systick.h
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\stm32f10x_tim1.h
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\stm32f10x_tim.h
+.\object\stm32f10x_lib.o: .\STM32F10xFWLib\inc\stm32f10x_usart.h

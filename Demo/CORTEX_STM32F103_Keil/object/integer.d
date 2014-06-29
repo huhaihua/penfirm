@@ -1,0 +1,13 @@
+.\object\integer.o: ..\Common\Minimal\integer.c
+.\object\integer.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\object\integer.o: ..\..\Source\include\FreeRTOS.h
+.\object\integer.o: C:\Keil\ARM\ARMCC\bin\..\include\stddef.h
+.\object\integer.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\object\integer.o: ..\..\Source\include\projdefs.h
+.\object\integer.o: ..\CORTEX_STM32F103_Keil\FreeRTOSConfig.h
+.\object\integer.o: ..\..\Source\include\portable.h
+.\object\integer.o: ..\..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h
+.\object\integer.o: ..\..\Source\include\mpu_wrappers.h
+.\object\integer.o: ..\..\Source\include\task.h
+.\object\integer.o: ..\..\Source\include\list.h
+.\object\integer.o: ..\Common\include\integer.h

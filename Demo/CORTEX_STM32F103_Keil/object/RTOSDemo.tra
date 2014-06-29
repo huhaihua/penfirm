@@ -1,0 +1,51 @@
+*** Creating Trace Output File '.\object\RTOSDemo.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\object\stm32f10x.o"'
+### List of Objects: adding '".\object\cortexm3_macro_rvds.o"'
+### List of Objects: adding '".\object\stm32f10x_usart.o"'
+### List of Objects: adding '".\object\stm32f10x_gpio.o"'
+### List of Objects: adding '".\object\stm32f10x_lib.o"'
+### List of Objects: adding '".\object\stm32f10x_nvic.o"'
+### List of Objects: adding '".\object\stm32f10x_rcc.o"'
+### List of Objects: adding '".\object\stm32f10x_spi.o"'
+### List of Objects: adding '".\object\stm32f10x_systick.o"'
+### List of Objects: adding '".\object\stm32f10x_tim.o"'
+### List of Objects: adding '".\object\partest.o"'
+### List of Objects: adding '".\object\serial.o"'
+### List of Objects: adding '".\object\timertest.o"'
+### List of Objects: adding '".\object\main.o"'
+### List of Objects: adding '".\object\spi_flash.o"'
+### List of Objects: adding '".\object\semtest.o"'
+### List of Objects: adding '".\object\blockq.o"'
+### List of Objects: adding '".\object\blocktim.o"'
+### List of Objects: adding '".\object\comtest.o"'
+### List of Objects: adding '".\object\death.o"'
+### List of Objects: adding '".\object\flash.o"'
+### List of Objects: adding '".\object\integer.o"'
+### List of Objects: adding '".\object\pollq.o"'
+### List of Objects: adding '".\object\adc.o"'
+### List of Objects: adding '".\object\drv8830.o"'
+### List of Objects: adding '".\object\encode.o"'
+### List of Objects: adding '".\object\pwm.o"'
+### List of Objects: adding '".\object\tasks.o"'
+### List of Objects: adding '".\object\list.o"'
+### List of Objects: adding '".\object\queue.o"'
+### List of Objects: adding '".\object\port.o"'
+### List of Objects: adding '".\object\heap_2.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\object\stm32f10x.o" ".\object\cortexm3_macro_rvds.o" ".\object\stm32f10x_usart.o" ".\object\stm32f10x_gpio.o" ".\object\stm32f10x_lib.o" ".\object\stm32f10x_nvic.o" ".\object\stm32f10x_rcc.o" ".\object\stm32f10x_spi.o" ".\object\stm32f10x_systick.o" ".\object\stm32f10x_tim.o" ".\object\partest.o" ".\object\serial.o" ".\object\timertest.o" ".\object\main.o" ".\object\spi_flash.o" ".\object\semtest.o" ".\object\blockq.o" ".\object\blocktim.o" ".\object\comtest.o" ".\object\death.o" ".\object\flash.o" ".\object\integer.o" ".\object\pollq.o" ".\object\adc.o" ".\object\drv8830.o" ".\object\encode.o" ".\object\pwm.o" ".\object\tasks.o" ".\object\list.o" ".\object\queue.o" ".\object\port.o" ".\object\heap_2.o" 
+--library_type=microlib --strict --scatter ".\object\RTOSDemo.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\RTOSDemo.map" -o .\object\RTOSDemo.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\object\RTOSDemo.axf'
+### ADS-LD Command File: '.\object\RTOSDemo.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\object\RTOSDemo.lnp', Handle=0x00001554
+### Writing '.lnp' file
+### ADS-LD Command file '.\object\RTOSDemo.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 9 errors
+### Updating obj list
+### LDADS_file() completed.

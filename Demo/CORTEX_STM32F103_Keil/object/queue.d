@@ -1,0 +1,14 @@
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: Source\queue.c
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: .\Source\include\FreeRTOS.h
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: C:\Keil\ARM\ARMCC\bin\..\include\stddef.h
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: .\Source\include\projdefs.h
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: .\Demo\CORTEX_STM32F103_Keil\FreeRTOSConfig.h
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: .\Source\include\portable.h
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: .\Source\portable\RVDS\ARM_CM3\portmacro.h
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: .\Source\include\mpu_wrappers.h
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: .\Source\include\task.h
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: .\Source\include\list.h
+.\Demo\CORTEX_STM32F103_Keil\object\queue.o: .\Source\include\queue.h
