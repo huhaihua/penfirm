@@ -344,8 +344,8 @@ void vBluetoohTask( void *pvParameters )
 }
 /*-----------------------------------------------------------*/
 
-float ADValue1=0.0,ADValue2=0.0,ADValue3=0.0;
-
+//float ADValue1=0.0,ADValue2=0.0,ADValue3=0.0;
+unsigned short ADValue[3];
 void vadcTask(void *pvParameters)
 {
     int i;
@@ -356,18 +356,21 @@ xLastWakeTime = xTaskGetTickCount();
 				ADC_RegularChannelConfig(ADC1,ADC_Channel_4,1,ADC_SampleTime_55Cycles5);
         ADC_SoftwareStartConvCmd(ADC1,ENABLE);
         vTaskDelayUntil( &xLastWakeTime, ( 2 / portTICK_RATE_MS ) );
-        ADValue1 = VREF*ADC_GetConversionValue(ADC1)/0x0fff;
+				ADValue[0] = ADC_GetConversionValue(ADC1);
+        //ADValue1 = VREF*ADC_GetConversionValue(ADC1)/0x0fff;
 
 				ADC_RegularChannelConfig(ADC1,ADC_Channel_5,1,ADC_SampleTime_55Cycles5);			
 			  ADC_SoftwareStartConvCmd(ADC1,ENABLE);
         vTaskDelayUntil( &xLastWakeTime, ( 2 / portTICK_RATE_MS ) );
-        ADValue2 = VREF*ADC_GetConversionValue(ADC1)/0x0fff;
+				ADValue[1] = ADC_GetConversionValue(ADC1);
+        //ADValue2 = VREF*ADC_GetConversionValue(ADC1)/0x0fff;
 
 				ADC_RegularChannelConfig(ADC1,ADC_Channel_6,1,ADC_SampleTime_55Cycles5);
 				ADC_SoftwareStartConvCmd(ADC1,ENABLE);
         vTaskDelayUntil( &xLastWakeTime, ( 2 / portTICK_RATE_MS ) );
-        ADValue3 = VREF*ADC_GetConversionValue(ADC1)/0x0fff;
-			
+				ADValue[2] = ADC_GetConversionValue(ADC1);
+        //ADValue3 = VREF*ADC_GetConversionValue(ADC1)/0x0fff;
+				vSerialPutString(USART2,(signed char *)ADValue,6);
 				vTaskDelayUntil( &xLastWakeTime, ( 200 / portTICK_RATE_MS ) );
         
     }
