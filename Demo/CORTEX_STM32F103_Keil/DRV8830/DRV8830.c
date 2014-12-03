@@ -231,7 +231,56 @@ void DRV8830_reg_write(u8 reg,u8 data)
     DRV8830_transfer_stop();
 }
 
+void DRV2667_reg_write(u8 reg,u8 data)
+{
+    DRV8830_transfer_start();
+    DRV8830_sendata(DRV2667_WRITE);
+    DRV8830_sendata(reg);
+    DRV8830_sendata(data);
+    DRV8830_transfer_stop();
+}
 
+void DRV2667_start(){
+	DRV2667_reg_write(0x02,0x00);
+	DRV2667_reg_write(0x01,0x03);
+	DRV2667_reg_write(0x03,0x01);
+	DRV2667_reg_write(0x04,0x00);
+	
+	
+	DRV2667_reg_write(0xFF,0x01);
+	DRV2667_reg_write(0x00,0x05);
+	DRV2667_reg_write(0x01,0x80);
+	DRV2667_reg_write(0x02,0x06);
+	DRV2667_reg_write(0x03,0x00);
+	DRV2667_reg_write(0x04,0x09);
+	DRV2667_reg_write(0x05,0x00);
+	
+	
+	DRV2667_reg_write(0x06,0x00);
+	DRV2667_reg_write(0x07,0x01);
+	DRV2667_reg_write(0x08,0x01);
+	DRV2667_reg_write(0x09,0x00);
+	
+	DRV2667_reg_write(0xFF,0x00);
+	//DRV2667_reg_write(0x02,0x00);
+}
+
+void DRV2667_stop(){
+	DRV2667_reg_write(0xFF,0x00);
+	DRV2667_reg_write(0x02,0x00);
+}
+
+void DRV2667_set(u8 frequency, u8 Amp){
+	
+	DRV2667_reg_write(0xFF,0x01);
+	
+	
+	DRV2667_reg_write(0x06,Amp);
+	DRV2667_reg_write(0x07,frequency);
+	
+	DRV2667_reg_write(0xFF,0x00);
+	DRV2667_reg_write(0x02,0x01);
+}
 
 u16 DRV8830_tmp;
 void DRV8830_test(u8 direct)

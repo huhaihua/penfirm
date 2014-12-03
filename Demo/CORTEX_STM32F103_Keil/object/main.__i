@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\Demo\CORTEX_STM32F103_Keil\STM32Lib -I.\Source\include -I.\Demo\CORTEX_STM32F103_Keil -I.\Demo\CORTEX_STM32F103_Keil\adc -I.\Demo\CORTEX_STM32F103_Keil\DRV8830 -I.\Demo\CORTEX_STM32F103_Keil\Encode -I.\Demo\CORTEX_STM32F103_Keil\ParTest -I.\Demo\CORTEX_STM32F103_Keil\pwm -I.\Source\portable\Keil -I.\Source\portable\RVDS\ARM_CM3 -I.\Demo\Common\include 
+-I C:\Keil\ARM\RV31\INC 
+-I C:\Keil\ARM\CMSIS\Include 
+-I C:\Keil\ARM\Inc\ST\STM32F10x 
+-o ".\Demo\CORTEX_STM32F103_Keil\object\main.o" --omf_browse ".\Demo\CORTEX_STM32F103_Keil\object\main.crf" --depend ".\Demo\CORTEX_STM32F103_Keil\object\main.d" "Demo\CORTEX_STM32F103_Keil\main.c"

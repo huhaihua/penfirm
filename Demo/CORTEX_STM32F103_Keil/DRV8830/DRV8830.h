@@ -14,6 +14,8 @@
 
 #define WRITE_ADD 0xC0
 #define READ_ADD 0xC1
+#define DRV2667_WRITE   0xB2
+#define DRV2667_READ    0xB3 
 #define CONTROL_SUB_ADD 0x0
 #define FAULT_SUB_ADD 0x01
 
@@ -30,9 +32,13 @@ u8 DRV8830_receive_byte_ack(void);
 u8 DRV8830_receive_byte_noack(void);
 u8 DRV8830_reg_read_byte(u8 reg);
 void DRV8830_reg_write(u8 reg,u8 data);
+void DRV2667_reg_write(u8 reg,u8 data);
 void Delay_DRV8830(u32 nMs);
 
 void DRV8830_test(u8 direct);
+void DRV2667_set(u8 frequency, u8 Amp);
+void DRV2667_start();
+void DRV2667_stop();
 
 
 

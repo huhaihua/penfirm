@@ -258,11 +258,10 @@ int main( void )
 
 void vBluetoohTask( void *pvParameters )
 {
-	u8 rx;
+	u8 rx,amp;
 	const TickType_t xTicksToWait = 1000 / portTICK_PERIOD_MS;
 	EventBits_t uxBits;
 	portTickType xLastWakeTime;
-	
 
 	for( ;; )
 	{
@@ -313,29 +312,15 @@ void vBluetoohTask( void *pvParameters )
 									xSerialPutChar( USART2,'f',0);
 								}									
 						}
-//						vTaskDelayUntil( &xLastWakeTime, ( 1000 / portTICK_RATE_MS ) );
-//						DRV8830_test(STANDBY);
-//						xTaskCreate( vGetmotorPosTask, "GetmotorPos", configMINIMAL_STACK_SIZE, NULL, mainGETPOS_TASK_PRIORITY, &xTaskHandle );
-						/* Wait a maximum of 1000ms for either bit 0 to be set within
-						the event group.  Clear the bits before exiting. */	
-// 						uxBits = xEventGroupWaitBits(
-// 												xCreatedEventGroup,   /* The event group being tested. */
-// 												BIT_0 , 				 /* The bits within the event group to wait for. */
-// 												pdTRUE,        /* BIT_0 and BIT_4 should be cleared before returning. */
-// 												pdFALSE,       /* Don't wait for both bits, either bit will do. */
-// 												xTicksToWait );/* Wait a maximum of 1000ms for either bit to be set. */
-// 						DRV8830_test(STANDBY);
-// 						if( ( uxBits & BIT_0 ) == BIT_0 )
-// 						{
-// 								/* xEventGroupWaitBits() returned because both bits were set. */
-// 								vSerialPutString( USART2, "Task run success\n", 17 );
-// //								 vTaskDelete(xTaskHandle);
-// 						}else{
-// 								vSerialPutString( USART2, "Task run error\n", 15 );
-// //								DRV8830_test(STANDBY);
-// //								vTaskDelete(xTaskHandle);
-//						}
-						
+						if(rx==0xfb){//Ã’¥…’Ò∂Ø
+								if(xSerialGetChar(USART2,&amp,serNO_BLOCK)==pdTRUE){
+											DRV2667_set(rounds,amp);
+									xSerialPutChar( USART2,'f',0);        
+								}
+						}
+						if(rx==0xfa){//Ã’¥…’Ò∂Ø
+									DRV2667_stop();
+						}
 				}
 		}
 //		xSerialPutChar(USART2,rx,serNO_BLOCK);// for test
@@ -469,6 +454,7 @@ static void prvSetupHardware( void )
 	ENC_init();
 	DRV8830_init();
 	pwm_init();
+	DRV2667_start();
 
 }
 /*-----------------------------------------------------------*/
