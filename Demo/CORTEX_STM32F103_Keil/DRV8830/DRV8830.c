@@ -242,7 +242,7 @@ void DRV2667_reg_write(u8 reg,u8 data)
 
 void DRV2667_start(){
 	DRV2667_reg_write(0x02,0x00);
-	DRV2667_reg_write(0x01,0x03);
+	DRV2667_reg_write(0x01,0x02);
 	DRV2667_reg_write(0x03,0x01);
 	DRV2667_reg_write(0x04,0x00);
 	
